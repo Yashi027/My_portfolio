@@ -9,13 +9,13 @@ import Contact from './pages/Contact'
 function App() {
 
   return (
-    <div className='bg-gradient-to-r from-cyan-600 to-blue-500'>
-      <Home/>
-      <About/>
-      <Skills/>
-      <Projects/>
-      <Education/>
-      <Contact/>
+    <div className='min-h-screen bg-gradient-to-r from-blue-600 via-cyan-600 to-cyan-500'>
+        <Home/>
+        <About/>
+        <Skills/>
+        <Projects/>
+        <Education/>
+        <Contact/>     
     </div>
   )
 }
