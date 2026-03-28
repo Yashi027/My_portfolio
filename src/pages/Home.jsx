@@ -43,7 +43,7 @@ const Home = () => {
           exit='exit'
           transition={{duration:0.8}}
           className='text-lime-400 inline p-1'>
-            {skills[index]}
+            {skills[index]}.
           </motion.p>
         </AnimatePresence>
       </div>
