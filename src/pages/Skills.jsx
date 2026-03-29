@@ -26,7 +26,7 @@ const Skills = () => {
         {
           skills.map((skill,index) => (
             <div key={index} 
-            className='bg-transparent border border-white/40 rounded-2xl p-6 flex flex-col items-center shadow-[0_20px_20px_rgba(0,0,0,0.7)] hover:scale-105 hover:shadow-[0_25px_25px_rgba(0,0,0,0.8)]'>
+            className='bg-transparent border border-white/40 rounded-2xl p-6 flex flex-col items-center shadow-[0_20px_20px_rgba(0,0,0,0.7)] hover:scale-105 hover:shadow-[0_25px_25px_rgba(0,0,0,0.8)] hover:bg-gray-100'>
               <img src={skill.image} alt={skill.name} 
               className=' h-20 mb-4 object-contain'/>
               <p className='font-semibold text-lg text-gray-800'>{skill.name}</p>
