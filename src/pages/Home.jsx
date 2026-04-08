@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useState } from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa6';
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { FaTelegramPlane } from 'react-icons/fa';
 import hero from '../assets/hero.jpeg'
 
@@ -69,6 +69,10 @@ const Home = () => {
         <a href="https://github.com/Yashi027"
         className='text-lime-400 text-2xl bg-blue-950 p-3 rounded-full hover:bg-lime-400 hover:text-blue-900 transition-all duration-300 border border-white/10 shadow-lg'>
           <FaGithub/>
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bansalyashi163@gmail.com"
+        className='text-lime-400 text-2xl bg-blue-950 p-3 rounded-full hover:bg-lime-400 hover:text-blue-900 transition-all duration-300 border border-white/10 shadow-lg'>
+          <FaEnvelope/>
         </a>
         <a href="https://web.telegram.org/k/"
         className='text-lime-400 text-2xl bg-blue-950 p-3 rounded-full hover:bg-lime-400 hover:text-blue-900 transition-all duration-300 border border-white/10 shadow-lg'>

@@ -54,7 +54,7 @@ const projects = [
 ]
 const Projects = () => {
   return (
-    <div className='min-h-screen px-6 py-16'>
+    <div className='min-h-screen px-6 py-16 ml-32'>
       <div className='text-center mb-16 '>
         <div className='flex justify-center text-5xl text-blue-950 font-bold gap-1'>
           <FaLaptopCode className='text-6xl mb-4' />

@@ -11,7 +11,7 @@ const profiles = [
 const About = () => {
   return (
     <>
-      <div className='min-h-screen'>
+      <div className='min-h-screen ml-32'>
         <div className='text-4xl flex justify-center p-5 text-blue-950'>
           <FaUser className='mt-10' />
           <h2 className='font-extrabold mt-10'> About <span className='text-lime-400'>Me</span></h2>
@@ -41,7 +41,7 @@ const About = () => {
         </div>
       </div>
 
-      <div>
+      <div className='ml-32'>
         <div className='text-4xl flex justify-center p-5 text-blue-950'>
           <FaUser className='mt-10' />
           <h2 className='font-extrabold mt-10'> Other <span className='text-lime-400'>Profiles</span></h2>
