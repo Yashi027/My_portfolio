@@ -1,13 +1,12 @@
-import React from "react";
 import { FaGraduationCap } from "react-icons/fa6";
 
 const Education = () => {
   return (
-    <div className="min-h-screen px-6 py-16 text-white ml-32">
+    <div className="min-h-screen px-6 py-16 text-white ml-60">
 
       <div className="text-center mb-16 flex justify-center">
         <FaGraduationCap className="text-5xl font-bold mb-4 text-blue-950"/>
-        <h1 className="text-5xl font-bold mb-4 text-blue-950">Education</h1>
+        <h1 className="text-5xl font-bold mb-4 text-blue-950">Education and Achievements</h1>
       </div>
 
       <div className="relative border-l-4 border-lime-400 max-w-4xl mx-auto">
@@ -19,16 +18,10 @@ const Education = () => {
           <p >Computer Science Engineering</p>
           <p >2024 – 2028</p>
           <p className="mt-3 opacity-90">
-            • Focused on Data Structures, Algorithms, and Full Stack Development
+            • Selected as a semi-finalist at Flipkart Grid 7.0
           </p>
           <p className="opacity-90">
-            • Built multiple real-world projects using MERN Stack 
-          </p>
-          <p className="opacity-90">
-            • Actively solving coding problems to strengthen problem-solving skills
-          </p>
-          <p className="opacity-90">
-            • Maintaining strong academic performance with consistent growth
+            • Solved 600+ problems on GeeksForGeeks and 300+ on LeetCode which strengthened my problem-solving skills
           </p>
         </div>
 
@@ -39,13 +32,10 @@ const Education = () => {
           <p >Science Stream (PCM)</p>
           <p>2023-2024</p>
           <p className=" mt-3 opacity-90">
-            • Developed analytical and logical thinking 
+            • Top 3 District Ranker
           </p>
           <p className="opacity-90">
-            • Strong foundation in Mathematics and Problem Solving  
-          </p>
-          <p className="opacity-90">
-            • Consistent academic performer
+            • Won Inter-House English Speech Competition 
           </p>
         </div>
 
@@ -55,10 +45,7 @@ const Education = () => {
           <h3 className="text-xl font-semibold">Lucknow Public School</h3>
           <p>2021-2022</p>
           <p className="mt-3 opacity-90">
-            • Built discipline, time management, and consistency  
-          </p>
-          <p className="opacity-90">
-            • Strong academic base and curiosity for technology
+            • Won Inter-College Hindi Debate Competition
           </p>
         </div>
 

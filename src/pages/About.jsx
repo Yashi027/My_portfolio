@@ -11,22 +11,21 @@ const profiles = [
 const About = () => {
   return (
     <>
-      <div className='min-h-screen ml-32'>
+      <div className='min-h-screen ml-60'>
         <div className='text-4xl flex justify-center p-5 text-blue-950'>
           <FaUser className='mt-10' />
           <h2 className='font-extrabold mt-10'> About <span className='text-lime-400'>Me</span></h2>
         </div>
-        <div className='flex justify-around mt-20 text-xl'>
+        <div className='flex flex-col lg:flex-row items-center justify-around mt-12 lg:mt-20 text-xl gap-10 px-6'>
           <div className='font-bold text-white max-w-3xl'>
             <h1 className='text-2xl'>I'm Yashi</h1>
             <p className='text-lime-400'>B.Tech-CSE | KIET'28</p>
             <br />
             <p>I am a <span className='text-lime-400'>Computer Science student</span> at KIET Group of Institutions, Ghaziabad, India.</p>
             <br />
-            <p>Being a keen learner, I am always passionate about exploring new areas in tech world.
-              I have experience with several programming languages like C, Python, Java... while my my proficiency lies in C++.
-              I aim to utilize my tachnical skills to develop innovative solutions that can elevate technological progress while
-              further seeking opportunities for my contributions in the field that aligns with my skills and interests.</p>
+            <p>I am a passionate and driven tech enthusiast with a strong curiosity for exploring emerging technologies and solving real-world problems through code. With hands-on experience in C, Python, and Java, and strong proficiency in C++, I bring both analytical thinking and practical implementation skills to every project I undertake. My goal is not just to write code, but to create impactful, scalable, and innovative solutions that contribute meaningfully to technological advancement.
+              <br/>
+              I am actively seeking opportunities where I can apply my technical expertise, continuously learn, and deliver value to an organization that aligns with my passion for growth and excellence.</p>
             <br />
             <p>Mail : <span className='text-lime-400'>bansalyashi163@gmail.com</span></p>
             <p>Place : <span className='text-lime-400'>Lakhimpur-Kheri, Uttar Pradesh, India-262701</span></p>
@@ -41,7 +40,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='ml-32'>
+      <div className='ml-60'>
         <div className='text-4xl flex justify-center p-5 text-blue-950'>
           <FaUser className='mt-10' />
           <h2 className='font-extrabold mt-10'> Other <span className='text-lime-400'>Profiles</span></h2>

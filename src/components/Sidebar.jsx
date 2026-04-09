@@ -4,31 +4,41 @@ import { FaCode, FaEnvelope, FaGraduationCap, FaLaptopCode, FaUser } from 'react
 import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
+
+  const linkClasses = ({ isActive }) =>
+    `m-3 block border rounded-2xl p-2 text-xl flex items-center gap-2 font-bold transition-all duration-300
+     ${isActive 
+        ? "bg-blue-300 text-blue-950 scale-105 shadow-lg" 
+        : "bg-blue-600 text-lime-400 hover:bg-blue-300 hover:text-blue-950 hover:scale-105"
+     }`;
+
   return (
-    <div className='fixed left-6 top-1/2 -translate-y-1/2 text-blue-950 p-6 text-2xl'>
-      <NavLink to='/' className='m-1 hover:text-lime-400'>
-        <FaHome/>
+    <div className='fixed left-6 top-1/2 -translate-y-1/2 p-6 text-2xl space-y-3'>
+      
+      <NavLink to='/' className={linkClasses}>
+        <FaHome /> Home
       </NavLink>
 
-      <NavLink to='/about' className='m-1 hover:text-lime-400'>
-        <FaUser/>
+      <NavLink to='/about' className={linkClasses}>
+        <FaUser /> About Me
       </NavLink>
 
-      <NavLink to='/education' className='m-1 hover:text-lime-400'>
-        <FaGraduationCap/>
+      <NavLink to='/education' className={linkClasses}>
+        <FaGraduationCap /> Education
       </NavLink>
 
-      <NavLink to='/skills' className='m-1 hover:text-lime-400'>
-        <FaLaptopCode/>
+      <NavLink to='/skills' className={linkClasses}>
+        <FaLaptopCode /> Skills
       </NavLink>
 
-      <NavLink to='/projects' className='m-1 hover:text-lime-400'>
-        <FaCode/>
+      <NavLink to='/projects' className={linkClasses}>
+        <FaCode /> Projects
       </NavLink>
 
-      <NavLink to='/contact' className='m-1 hover:text-lime-400'>
-        <FaEnvelope/>
+      <NavLink to='/contact' className={linkClasses}>
+        <FaEnvelope /> Contact
       </NavLink>
+
     </div>
   );
 }

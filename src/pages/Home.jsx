@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useState } from 'react';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa6';
@@ -23,7 +23,7 @@ const Home = () => {
   };
 
   return (
-    <div className='flex flex-col md:flex-row justify-center gap-18 ml-15'>
+    <div className='flex flex-col md:flex-row justify-center gap-18 ml-60'>
       <section id='hero' className='min-h-screen flex flex-col justify-center px-4 max-w-2xl '>
       <motion.h1
       initial={{opacity:0, y: -20}}
