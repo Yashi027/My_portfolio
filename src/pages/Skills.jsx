@@ -16,8 +16,8 @@ const skills = [
 ]
 const Skills = () => {
   return (
-    <div className='min-h-screen px-6 py-16 ml-60 '>
-      <div className='text-center mb-16 flex justify-center text-5xl text-blue-950 font-bold gap-1'>
+    <div className='min-h-screen px-6 py-16'>
+      <div className='text-center mb-16 flex justify-center text-5xl text-blue-950 font-bold gap-1 mt-15'>
         <FaLaptopCode className='text-6xl mb-4'/>
         <h1 className='mb-4 '>Skills</h1>
       </div>

@@ -9,34 +9,34 @@ const Sidebar = () => {
     `m-3 block border rounded-2xl p-2 text-xl flex items-center gap-2 font-bold transition-all duration-300
      ${isActive 
         ? "bg-blue-300 text-blue-950 scale-105 shadow-lg" 
-        : "bg-blue-600 text-lime-400 hover:bg-blue-300 hover:text-blue-950 hover:scale-105"
+        : "bg-blue-600 text-lime-400 hover:scale-105"
      }`;
 
   return (
-    <div className='fixed left-6 top-1/2 -translate-y-1/2 p-6 text-2xl space-y-3'>
+    <div className='fixed top-0 left-0 w-full z-50 flex justify-center p-4'>
       
       <NavLink to='/' className={linkClasses}>
-        <FaHome /> Home
+        <FaHome /> <span className="hidden md:inline">Home</span>
       </NavLink>
 
       <NavLink to='/about' className={linkClasses}>
-        <FaUser /> About Me
+        <FaUser /> <span className="hidden md:inline">About Me</span>
       </NavLink>
 
       <NavLink to='/education' className={linkClasses}>
-        <FaGraduationCap /> Education
+        <FaGraduationCap /> <span className="hidden md:inline">Education</span>
       </NavLink>
 
       <NavLink to='/skills' className={linkClasses}>
-        <FaLaptopCode /> Skills
+        <FaLaptopCode /> <span className="hidden md:inline">Skills</span>
       </NavLink>
 
       <NavLink to='/projects' className={linkClasses}>
-        <FaCode /> Projects
+        <FaCode /> <span className="hidden md:inline">Projects</span>
       </NavLink>
 
       <NavLink to='/contact' className={linkClasses}>
-        <FaEnvelope /> Contact
+        <FaEnvelope /> <span className="hidden md:inline">Reach Out</span>
       </NavLink>
 
     </div>

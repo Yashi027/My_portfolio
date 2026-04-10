@@ -11,10 +11,10 @@ const profiles = [
 const About = () => {
   return (
     <>
-      <div className='min-h-screen ml-60'>
-        <div className='text-4xl flex justify-center p-5 text-blue-950'>
-          <FaUser className='mt-10' />
-          <h2 className='font-extrabold mt-10'> About <span className='text-lime-400'>Me</span></h2>
+      <div className='min-h-screen px-6 py-16'>
+        <div className='text-5xl flex justify-center p-5 text-blue-950 mt-15'>
+          <FaUser />
+          <h2 className='font-extrabold'> About <span className='text-lime-400'>Me</span></h2>
         </div>
         <div className='flex flex-col lg:flex-row items-center justify-around mt-12 lg:mt-20 text-xl gap-10 px-6'>
           <div className='font-bold text-white max-w-3xl'>
@@ -40,7 +40,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='ml-60'>
+      <div>
         <div className='text-4xl flex justify-center p-5 text-blue-950'>
           <FaUser className='mt-10' />
           <h2 className='font-extrabold mt-10'> Other <span className='text-lime-400'>Profiles</span></h2>

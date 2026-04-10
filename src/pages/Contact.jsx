@@ -4,9 +4,9 @@ import { FiMail } from 'react-icons/fi'
 
 const Contact = () => {
   return (
-    <div className='min-h-screen px-4 py-12 sm:px-6 flex items-center justify-center ml-60'>
+    <div className='min-h-screen px-4 py-12 sm:px-6 flex items-center justify-center '>
       <div className='w-full max-w-6xl'>
-        <div className='flex justify-center text-5xl text-center text-blue-950 font-bold gap-1 space-y-6'>
+        <div className='flex justify-center text-5xl text-center text-blue-950 font-bold gap-1 space-y-6 mt-15'>
           <FaEnvelope className='text-6xl mb-4' />
           <h1 className='mb-4'>Get In Touch</h1>
         </div>
