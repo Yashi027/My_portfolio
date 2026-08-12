@@ -23,7 +23,7 @@ const Education = () => {
               year: "2024 – 2028",
               points: [
                 "Flipkart Grid 7.0 Semi-finalist",
-                "600+ GFG & 300+ LeetCode problems"
+                "650+ GFG & 400+ LeetCode problems"
               ]
             },
             {

@@ -8,8 +8,10 @@ const skills = [
   {name: "React", image: '/react.png'},
   {name: "GitHub", image: '/git.png'},
   {name: "Node.js", image: '/node.png'},
+  {name: "Express.js", image: '/express.png'},
   {name: "MongoDB", image: '/mongo.png'},
   {name: "Postman", image: '/postman.webp'},
+  {name: "SQL", image: '/sql.webp'},
   {name: "C++", image: '/c.png'},
   {name: "Java", image: '/java.png'},
   {name: 'VS Code',image: '/vs.png'}
