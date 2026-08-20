@@ -1,104 +1,201 @@
-import { useEffect } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
-import { useState } from 'react';
-import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa6';
-import { FaTelegramPlane } from 'react-icons/fa';
-import hero from '../assets/hero.jpeg'
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
+import { FaTelegramPlane } from "react-icons/fa";
+import hero from "../assets/hero.jpeg";
 
 const Home = () => {
   const [index, setIndex] = useState(0);
-  const skills = ['Full Stack Development', 'Problem-Solving'];
+
+  const skills = [
+    "Full Stack Developer",
+    "Problem Solver",
+    "MERN Stack Developer",
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setIndex(prev => (prev + 1) % skills.length)
+      setIndex((prev) => (prev + 1) % skills.length);
     }, 2000);
+
     return () => clearInterval(timer);
-  }, [skills.length])
+  }, [skills.length]);
 
   const skillVariants = {
-    initial: { opacity: 0, y: 20 },
+    initial: { opacity: 0, y: 15 },
     animate: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: -20 }
+    exit: { opacity: 0, y: -15 },
   };
 
   return (
-    <div className='flex flex-col md:flex-row justify-center gap-18'>
-      <section id='hero' className='min-h-screen flex flex-col justify-center px-4 max-w-2xl'>
-        <motion.h1
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className='text-3xl md:text-5xl font-bold text-cyan-950 leading-tight'>
-          Hello, I'm <span className='text-white drop-shadow-sm'>Yashi Bansal.</span>
-        </motion.h1>
-        <div className='text-white font-bold mt-6 text-2xl md:text-3xl flex items-center gap-2 '>
-          I am into
-          <AnimatePresence mode='wait'>
+    <section className="min-h-[calc(100vh-6rem)] w-full px-5 sm:px-6 md:px-8 lg:px-12">
+
+      <div className="max-w-6xl mx-auto min-h-[calc(100vh-6rem)] flex items-center">
+
+        <div className="w-full flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-8 md:gap-10 lg:gap-14">
+
+          <div className="w-full sm:w-[60%] md:w-[62%] lg:w-3/5 flex flex-col justify-center text-center sm:text-left">
+
+            <motion.h1
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-cyan-950 leading-tight"
+            >
+              Hello, I'm{" "}
+              <span className="text-white drop-shadow-sm">
+                Yashi Bansal
+              </span>
+            </motion.h1>
+
+            <div className="mt-5 flex flex-wrap items-center justify-center sm:justify-start gap-2 text-xl sm:text-2xl md:text-3xl font-bold text-white min-h-[40px]">
+
+              <span className="shrink-0">
+                I'm a
+              </span>
+
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={skills[index]}
+                  variants={skillVariants}
+                  initial="initial"
+                  animate="animate"
+                  exit="exit"
+                  transition={{ duration: 0.6 }}
+                  className="text-lime-400"
+                >
+                  {skills[index]}
+                </motion.span>
+              </AnimatePresence>
+
+            </div>
+
+
             <motion.p
-              key={skills[index]}
-              variants={skillVariants}
-              initial='initial'
-              animate='animate'
-              exit='exit'
-              transition={{ duration: 0.8 }}
-              className='text-lime-400 inline p-1'>
-              {skills[index]}.
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4 }}
+              className="mt-5 max-w-2xl mx-auto sm:mx-0 text-base sm:text-lg md:text-lg lg:text-xl text-white leading-relaxed"
+            >
+              I build{" "}
+              <span className="text-lime-400 font-semibold">
+                modern, fast, and interactive web applications
+              </span>
+              . I focus on clean UI, scalable backends, well-designed APIs,
+              and smooth user experiences.
             </motion.p>
-          </AnimatePresence>
+
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.55 }}
+              className="mt-3 max-w-2xl mx-auto sm:mx-0 text-base sm:text-lg md:text-lg text-white/90 leading-relaxed"
+            >
+              I enjoy turning ideas into{" "}
+              <span className="text-lime-400 font-semibold">
+                reliable and production-ready products
+              </span>{" "}
+              while continuously learning and improving as a developer.
+            </motion.p>
+
+
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.65 }}
+              className="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-4 mt-6"
+            >
+
+              <a
+                href="https://drive.google.com/file/d/1zAfAeOGP9rTRE4XuiZOnsIcXUooqKbpG/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 sm:px-7 py-2.5 sm:py-3 rounded-full bg-blue-900 text-white border border-white/20 shadow-[0_10px_20px_rgba(0,0,0,0.3)] hover:bg-lime-400 hover:text-blue-950 hover:scale-105 font-bold text-sm sm:text-base transition-all duration-300"
+              >
+                View Resume
+              </a>
+
+              <a
+                href="/projects"
+                className="px-5 sm:px-7 py-2.5 sm:py-3 rounded-full bg-white/15 text-white border border-white/30 backdrop-blur-sm hover:bg-white hover:text-blue-950 hover:scale-105 font-bold text-sm sm:text-base transition-all duration-300"
+              >
+                View Projects
+              </a>
+
+            </motion.div>
+
+
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.75 }}
+              className="flex justify-center sm:justify-start gap-3 sm:gap-4 mt-6"
+            >
+
+              <a
+                href="https://www.linkedin.com/in/yashi-bansal-66aa09332"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-blue-950 text-lime-400 border border-white/10 shadow-lg hover:bg-lime-400 hover:text-blue-900 hover:-translate-y-1 transition-all duration-300"
+              >
+                <FaLinkedin className="text-lg sm:text-xl" />
+              </a>
+
+              <a
+                href="https://github.com/Yashi027"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-blue-950 text-lime-400 border border-white/10 shadow-lg hover:bg-lime-400 hover:text-blue-900 hover:-translate-y-1 transition-all duration-300"
+              >
+                <FaGithub className="text-lg sm:text-xl" />
+              </a>
+
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=bansalyashi163@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Email"
+                className="flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-blue-950 text-lime-400 border border-white/10 shadow-lg hover:bg-lime-400 hover:text-blue-900 hover:-translate-y-1 transition-all duration-300"
+              >
+                <FaEnvelope className="text-lg sm:text-xl" />
+              </a>
+
+              <a
+                href="https://web.telegram.org/k/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Telegram"
+                className="flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-blue-950 text-lime-400 border border-white/10 shadow-lg hover:bg-lime-400 hover:text-blue-900 hover:-translate-y-1 transition-all duration-300"
+              >
+                <FaTelegramPlane className="text-lg sm:text-xl" />
+              </a>
+
+            </motion.div>
+
+          </div>
+
+          <div className="hidden sm:flex w-[40%] md:w-[38%] lg:w-2/5 justify-center items-center shrink-0">
+
+            <motion.img
+              src={hero}
+              alt="Yashi Bansal"
+              className="h-44 sm:h-52 md:h-60 lg:h-80 xl:h-96 w-auto max-w-full object-cover rounded-3xl shadow-2xl border border-white/20"
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeOut" }}
+              whileHover={{ y: -15, scale: 1.04 }}
+            />
+
+          </div>
+
         </div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-          className="text-white mt-4 max-w-md text-lg leading-relaxed">
-          Passionate about creating seamless user experiences and robust back-end systems.
-          Currently looking for opportunities to collaborate on innovative MERN Stack projects.
-        </motion.p>
-
-        <motion.a
-          href='https://drive.google.com/file/d/13oRh2mXZzGHiF4CmXNKnl9gXPdVFEb1l/view?usp=sharing'
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-          className='mt-8 px-8 py-3 w-fit bg-blue-900 backdrop-blur-md border border-white/20 hover:bg-lime-400 hover:text-blue-900 rounded-full shadow-[0_10px_20px_rgba(0,0,0,0.3)] text-white font-bold text-lg transition-all duration-300 text-center'>
-          Resume
-        </motion.a>
-
-        <motion.div
-          initial={{}}
-          animate={{}}
-          transition={{}}
-          className='flex gap-6 mt-8 text-2xl'>
-          <a href="https://www.linkedin.com/in/yashi-bansal-66aa09332"
-            className='text-lime-400 text-2xl bg-blue-950 p-3 rounded-full hover:bg-lime-400 hover:text-blue-900 transition-all duration-300 border border-white/10 shadow-lg'>
-            <FaLinkedin />
-          </a>
-          <a href="https://github.com/Yashi027"
-            className='text-lime-400 text-2xl bg-blue-950 p-3 rounded-full hover:bg-lime-400 hover:text-blue-900 transition-all duration-300 border border-white/10 shadow-lg'>
-            <FaGithub />
-          </a>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bansalyashi163@gmail.com"
-            className='text-lime-400 text-2xl bg-blue-950 p-3 rounded-full hover:bg-lime-400 hover:text-blue-900 transition-all duration-300 border border-white/10 shadow-lg'>
-            <FaEnvelope />
-          </a>
-          <a href="https://web.telegram.org/k/"
-            className='text-lime-400 text-2xl bg-blue-950 p-3 rounded-full hover:bg-lime-400 hover:text-blue-900 transition-all duration-300 border border-white/10 shadow-lg'>
-            <FaTelegramPlane />
-          </a>
-        </motion.div>
-
-      </section>
-      <div className='flex justify-center items-center'>
-        <motion.img src={hero}
-          className='h-80 rounded-2xl shadow-2xl'
-          animate={{ y: [0, -10, 0] }}
-          transition={{ duration: 3, repeat: Infinity, ease: "easeOut" }}
-          whileHover={{ y: -20, scale: 1.05 }} />
       </div>
-    </div>
-  )
-}
 
-export default Home
+    </section>
+  );
+};
+
+export default Home;
