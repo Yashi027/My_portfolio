@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import hero from "../assets/hero.jpeg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [index, setIndex] = useState(0);
@@ -116,12 +117,12 @@ const Home = () => {
                 View Resume
               </a>
 
-              <a
-                href="/projects"
+              <Link
+                to="/projects"
                 className="px-5 sm:px-7 py-2.5 sm:py-3 rounded-full bg-white/15 text-white border border-white/30 backdrop-blur-sm hover:bg-white hover:text-blue-950 hover:scale-105 font-bold text-sm sm:text-base transition-all duration-300"
               >
                 View Projects
-              </a>
+              </Link>
 
             </motion.div>
 
