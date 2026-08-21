@@ -10,7 +10,7 @@ import portal from "../assets/portal.png";
 const projects = [
   {
     name: "My_Portfolio",
-    skill: ["React", "Tailwind CSS"],
+    skill: ["JavaScript","React", "Tailwind CSS"],
     description: "You are here!",
     image: portfolioimg,
     link: "/",
