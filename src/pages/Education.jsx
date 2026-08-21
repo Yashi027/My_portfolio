@@ -36,9 +36,9 @@ const Education = () => {
 
       <div className="text-center mb-12 sm:mb-16 lg:mb-20 flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-3">
 
-        <FaGraduationCap className="text-4xl sm:text-5xl text-blue-950" />
+        <FaGraduationCap className="text-4xl sm:text-5xl text-slate-800" />
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-950">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-800">
           Education and Achievements
         </h1>
 
@@ -48,7 +48,7 @@ const Education = () => {
 
         <div className="relative">
 
-          <div className="absolute left-[10px] sm:left-[11px] top-0 bottom-0 w-1 bg-lime-400 rounded-full" />
+          <div className="absolute left-[10px] sm:left-[11px] top-0 bottom-0 w-1 bg-amber-500 rounded-full" />
 
           <div className="space-y-8 sm:space-y-10">
 
@@ -59,29 +59,29 @@ const Education = () => {
                 className="relative pl-8 sm:pl-10"
               >
 
-                <div className="absolute left-0 top-7 w-5 h-5 bg-lime-400 rounded-full z-10 border-4 border-white" />
+                <div className="absolute left-0 top-7 w-5 h-5 bg-amber-500 rounded-full z-10 border-4 border-white" />
 
-                <div className="w-full p-5 sm:p-6 rounded-xl border border-gray-700 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-lime-400/30">
+                <div className="w-full p-5 sm:p-6 rounded-xl bg-white border border-slate-200 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-amber-300">
 
-                  <h2 className="text-lg sm:text-xl text-lime-400 font-semibold mb-1">
+                  <h2 className="text-lg sm:text-xl text-amber-600 font-semibold mb-1">
                     {item.title}
                   </h2>
 
-                  <h3 className="font-semibold text-base sm:text-lg mb-1 break-words">
+                  <h3 className="font-semibold text-base sm:text-lg mb-1 break-words text-slate-800">
                     {item.school}
                   </h3>
 
                   {item.desc && (
-                    <p className="text-sm sm:text-base opacity-80 break-words">
+                    <p className="text-sm sm:text-base text-slate-500 break-words">
                       {item.desc}
                     </p>
                   )}
 
-                  <p className="text-sm sm:text-base mb-4">
+                  <p className="text-sm sm:text-base mb-4 text-slate-500">
                     {item.year}
                   </p>
 
-                  <ul className="text-sm sm:text-base opacity-90 space-y-2">
+                  <ul className="text-sm sm:text-base text-slate-600 space-y-2">
 
                     {item.points.map((point, i) => (
                       <li
@@ -110,7 +110,7 @@ const Education = () => {
 
         <div className="relative max-w-6xl mx-auto">
 
-          <div className="absolute top-[10px] left-0 right-0 h-1 bg-lime-400 rounded-full z-0" />
+          <div className="absolute top-[10px] left-0 right-0 h-1 bg-amber-500 rounded-full z-0" />
 
           <div className="grid grid-cols-3 gap-8">
 
@@ -121,33 +121,33 @@ const Education = () => {
                 className="relative flex flex-col items-center"
               >
 
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-5 h-5 bg-lime-400 rounded-full z-10 border-4 border-white" />
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-5 h-5 bg-amber-500 rounded-full z-10 border-4 border-white" />
 
-                <div className="mt-16 w-full min-h-[260px] p-6 rounded-xl border border-gray-700 shadow-lg flex flex-col justify-between transition-all duration-300 hover:-translate-y-2 hover:shadow-lime-400/30">
+                <div className="mt-16 w-full min-h-[260px] p-6 rounded-xl bg-white border border-slate-200 shadow-md flex flex-col justify-between transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-amber-300">
 
                   <div>
 
-                    <h2 className="text-xl text-lime-400 font-semibold mb-1">
+                    <h2 className="text-xl text-amber-600 font-semibold mb-1">
                       {item.title}
                     </h2>
 
-                    <h3 className="font-semibold text-lg mb-1 break-words">
+                    <h3 className="font-semibold text-lg mb-1 break-words text-slate-800">
                       {item.school}
                     </h3>
 
                     {item.desc && (
-                      <p className="text-sm opacity-80 break-words">
+                      <p className="text-sm text-slate-500 break-words">
                         {item.desc}
                       </p>
                     )}
 
-                    <p className="text-sm mb-4">
+                    <p className="text-sm mb-4 text-slate-500">
                       {item.year}
                     </p>
 
                   </div>
 
-                  <ul className="text-sm opacity-90 space-y-2">
+                  <ul className="text-sm text-slate-600 space-y-2">
 
                     {item.points.map((point, i) => (
                       <li

@@ -25,25 +25,25 @@ const About = () => {
   return (
     <section className="w-full px-5 sm:px-6 md:px-8 lg:px-12 pt-24 pb-10">
 
-      <div className="text-3xl sm:text-4xl md:text-5xl flex justify-center items-center gap-2 sm:gap-3 text-blue-950 font-bold mb-8 sm:mb-10">
+      <div className="text-3xl sm:text-4xl md:text-5xl flex justify-center items-center gap-2 sm:gap-3 text-slate-800 font-bold mb-8 sm:mb-10">
 
         <FaUser className="text-3xl sm:text-4xl md:text-5xl" />
 
         <h2>
-          About <span className="text-lime-400">Me</span>
+          About <span className="text-amber-600">Me</span>
         </h2>
 
       </div>
 
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-10 lg:gap-14">
 
-        <div className="w-full lg:w-3/5 text-white text-center lg:text-left">
+        <div className="w-full lg:w-3/5 text-slate-700 text-center lg:text-left">
 
-          <h1 className="text-2xl sm:text-3xl font-bold">
+          <h1 className="text-2xl sm:text-3xl font-bold text-slate-900">
             I'm Yashi
           </h1>
 
-          <p className="text-lime-400 font-semibold text-base sm:text-lg mt-1 mb-5">
+          <p className="text-amber-600 font-semibold text-base sm:text-lg mt-1 mb-5">
             B.Tech CSE | KIET'28
           </p>
 
@@ -51,7 +51,7 @@ const About = () => {
 
             <p>
               I am a{" "}
-              <span className="text-lime-400 font-semibold">
+              <span className="text-amber-600 font-semibold">
                 Computer Science student
               </span>{" "}
               at KIET Group of Institutions, Ghaziabad, India.
@@ -67,7 +67,7 @@ const About = () => {
 
             <p>
               I enjoy turning ideas into{" "}
-              <span className="text-lime-400 font-semibold">
+              <span className="text-amber-600 font-semibold">
                 scalable, user-focused, and practical solutions
               </span>{" "}
               while continuously improving my problem-solving and development
@@ -86,15 +86,15 @@ const About = () => {
           <div className="mt-6 space-y-2 text-sm sm:text-base md:text-lg">
 
             <p className="break-words">
-              <span className="font-semibold">Mail:</span>{" "}
-              <span className="text-lime-400">
+              <span className="font-semibold text-slate-900">Mail:</span>{" "}
+              <span className="text-amber-600">
                 bansalyashi163@gmail.com
               </span>
             </p>
 
             <p>
-              <span className="font-semibold">Place:</span>{" "}
-              <span className="text-lime-400">
+              <span className="font-semibold text-slate-900">Place:</span>{" "}
+              <span className="text-amber-600">
                 Lakhimpur-Kheri, Uttar Pradesh, India
               </span>
             </p>
@@ -108,7 +108,7 @@ const About = () => {
           <motion.img
             src={hero}
             alt="Yashi Bansal"
-            className="h-56 sm:h-64 md:h-72 lg:h-80 w-auto max-w-[80%] object-cover rounded-3xl shadow-2xl border border-white/20"
+            className="h-56 sm:h-64 md:h-72 lg:h-80 w-auto max-w-[80%] object-cover rounded-2xl shadow-2xl border border-slate-200"
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 3, repeat: Infinity, ease: "easeOut" }}
             whileHover={{ y: -15, scale: 1.04 }}
@@ -120,12 +120,12 @@ const About = () => {
 
       <div className="max-w-6xl mx-auto mt-12 sm:mt-16">
 
-        <div className="text-3xl sm:text-4xl md:text-5xl flex justify-center items-center gap-2 sm:gap-3 text-blue-950 font-bold mb-7 sm:mb-9">
+        <div className="text-3xl sm:text-4xl md:text-5xl flex justify-center items-center gap-2 sm:gap-3 text-slate-800 font-bold mb-7 sm:mb-9">
 
           <FaUser className="text-3xl sm:text-4xl md:text-5xl" />
 
           <h2>
-            Other <span className="text-lime-400">Profiles</span>
+            Other <span className="text-amber-600">Profiles</span>
           </h2>
 
         </div>
@@ -139,7 +139,7 @@ const About = () => {
               href={profile.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full min-h-[140px] sm:min-h-[160px] bg-white/10 backdrop-blur-sm border border-white/40 rounded-2xl p-5 flex flex-col items-center justify-center shadow-[0_15px_20px_rgba(0,0,0,0.45)] hover:-translate-y-2 hover:scale-[1.03] hover:bg-white/20 hover:shadow-[0_20px_30px_rgba(0,0,0,0.6)] transition-all duration-300"
+              className="w-full min-h-[140px] sm:min-h-[160px] bg-white border border-slate-200 rounded-2xl p-5 flex flex-col items-center justify-center shadow-md hover:-translate-y-2 hover:scale-[1.03] hover:shadow-xl hover:border-amber-300 transition-all duration-300"
             >
 
               <img
@@ -148,7 +148,7 @@ const About = () => {
                 className="h-14 sm:h-16 md:h-20 w-auto mb-3 sm:mb-4 object-contain"
               />
 
-              <p className="font-semibold text-sm sm:text-base md:text-lg text-gray-800">
+              <p className="font-semibold text-sm sm:text-base md:text-lg text-slate-800">
                 {profile.name}
               </p>
 

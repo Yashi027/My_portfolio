@@ -13,7 +13,7 @@ const projects = [
     skill: ["React", "Tailwind CSS"],
     description: "You are here!",
     image: portfolioimg,
-    link: "#home",
+    link: "/",
   },
   {
     name: "Skill Gap Analysis",
@@ -25,13 +25,7 @@ const projects = [
   },
   {
     name: "Green Cart",
-    skill: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Tailwind CSS",
-    ],
+    skill: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     description:
       "A modern, user-friendly grocery shopping app that allows users to browse, select, and purchase fresh groceries online. The app emphasizes convenience, personalization, and a seamless shopping experience.",
     image: cart,
@@ -39,13 +33,7 @@ const projects = [
   },
   {
     name: "Job Portal",
-    skill: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Tailwind CSS",
-    ],
+    skill: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     description:
       "A full-featured web application that allows user authentication, job posting management, search filters, and real-time application handling.",
     image: portal,
@@ -53,15 +41,7 @@ const projects = [
   },
   {
     name: "Book Review Platform",
-    skill: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-    ],
+    skill: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "MongoDB"],
     description:
       "A full-stack web application where users can explore, add, and review books. It supports user authentication, book management, image uploads, and a responsive, interactive UI with pagination.",
     image: book,
@@ -69,15 +49,7 @@ const projects = [
   },
   {
     name: "The Golden Spoon",
-    skill: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-    ],
+    skill: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "MongoDB"],
     description:
       "The Golden Spoon is a modern restaurant website with clean UI/UX, responsive layout and structured sections for menu and restaurant details.",
     image: restaurant,
@@ -91,7 +63,7 @@ const Projects = () => {
 
       <div className="text-center mb-10 sm:mb-12 md:mb-14">
 
-        <div className="flex justify-center items-center text-3xl sm:text-4xl md:text-5xl text-blue-950 font-bold gap-2 sm:gap-3">
+        <div className="flex justify-center items-center text-3xl sm:text-4xl md:text-5xl text-slate-800 font-bold gap-2 sm:gap-3">
 
           <FaLaptopCode className="text-4xl sm:text-5xl md:text-6xl" />
 
@@ -101,7 +73,7 @@ const Projects = () => {
 
         </div>
 
-        <p className="mt-3 sm:mt-4 max-w-2xl mx-auto px-2 text-sm sm:text-base text-white font-medium leading-relaxed">
+        <p className="mt-3 sm:mt-4 max-w-2xl mx-auto px-2 text-sm sm:text-base text-slate-600 font-medium leading-relaxed">
           A showcase of my development journey — full-stack applications,
           UI-focused projects, and scalable web platforms.
         </p>
@@ -114,7 +86,7 @@ const Projects = () => {
 
           <div
             key={index}
-            className="group relative overflow-hidden bg-white rounded-2xl shadow-lg cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+            className="group relative overflow-hidden bg-white border border-slate-200 rounded-2xl shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
           >
 
             <div className="relative h-44 sm:h-48 w-full overflow-hidden">
@@ -129,7 +101,7 @@ const Projects = () => {
 
             <div className="p-4 sm:p-5">
 
-              <h3 className="text-lg sm:text-xl font-bold text-blue-950 mb-2">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
                 {pro.name}
               </h3>
 
@@ -139,7 +111,7 @@ const Projects = () => {
 
                   <span
                     key={i}
-                    className="text-[11px] sm:text-xs font-medium bg-blue-100 text-blue-700 px-2 py-1 rounded-md"
+                    className="text-[11px] sm:text-xs font-medium bg-amber-50 text-amber-700 px-2 py-1 rounded-md"
                   >
                     {s}
                   </span>
@@ -148,19 +120,19 @@ const Projects = () => {
 
               </div>
 
-              <p className="text-gray-600 text-sm line-clamp-2 leading-relaxed">
+              <p className="text-slate-600 text-sm line-clamp-2 leading-relaxed">
                 {pro.description}
               </p>
 
             </div>
 
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
 
               <a
                 href={pro.link}
                 target={pro.link.startsWith("#") ? "_self" : "_blank"}
                 rel="noopener noreferrer"
-                className="text-white font-semibold hover:text-lime-400 transition-colors duration-300"
+                className="text-white font-semibold hover:text-amber-400 transition-colors duration-300"
               >
                 View Project →
               </a>
@@ -178,7 +150,7 @@ const Projects = () => {
           href="https://github.com/Yashi027"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-7 sm:px-8 py-3 rounded-full bg-blue-950 text-white font-bold text-base sm:text-lg border border-white/20 shadow-[0_10px_20px_rgba(0,0,0,0.3)] hover:bg-lime-400 hover:text-blue-950 hover:scale-105 transition-all duration-300"
+          className="px-7 sm:px-8 py-3 rounded-full bg-slate-900 text-white font-bold text-base sm:text-lg border border-slate-800 shadow-lg hover:bg-amber-500 hover:scale-105 transition-all duration-300"
         >
           View More Projects →
         </a>

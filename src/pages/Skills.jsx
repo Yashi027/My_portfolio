@@ -23,7 +23,7 @@ const Skills = () => {
     <section className="min-h-screen w-full px-4 sm:px-6 md:px-8 lg:px-12 pt-24 pb-12">
 
 
-      <div className="text-center mb-12 sm:mb-14 md:mb-16 flex justify-center items-center gap-2 text-3xl sm:text-4xl md:text-5xl text-blue-950 font-bold">
+      <div className="text-center mb-12 sm:mb-14 md:mb-16 flex justify-center items-center gap-2 text-3xl sm:text-4xl md:text-5xl text-slate-800 font-bold">
 
         <FaLaptopCode className="text-4xl sm:text-5xl md:text-6xl" />
 
@@ -39,7 +39,7 @@ const Skills = () => {
 
           <div
             key={index}
-            className="w-full min-h-[150px] sm:min-h-[165px] md:min-h-[175px] bg-white/10 backdrop-blur-sm border border-white/40 rounded-2xl p-4 sm:p-5 md:p-6 flex flex-col items-center justify-center shadow-[0_15px_20px_rgba(0,0,0,0.45)] hover:-translate-y-2 hover:scale-105 hover:bg-white/20 hover:shadow-[0_20px_30px_rgba(0,0,0,0.6)] transition-all duration-300"
+            className="w-full min-h-[150px] sm:min-h-[165px] md:min-h-[175px] bg-white border border-slate-200 rounded-2xl p-4 sm:p-5 md:p-6 flex flex-col items-center justify-center shadow-md hover:-translate-y-2 hover:scale-105 hover:shadow-xl hover:border-amber-300 transition-all duration-300"
           >
 
             <img
@@ -48,7 +48,7 @@ const Skills = () => {
               className="h-14 sm:h-16 md:h-20 w-auto mb-3 sm:mb-4 object-contain"
             />
 
-            <p className="font-semibold text-sm sm:text-base md:text-lg text-gray-800 text-center">
+            <p className="font-semibold text-sm sm:text-base md:text-lg text-slate-800 text-center">
               {skill.name}
             </p>
 

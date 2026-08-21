@@ -21,7 +21,7 @@ const Sidebar = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 px-3 sm:px-6 pt-3">
-      <nav className="max-w-5xl mx-auto flex items-center justify-center gap-1 sm:gap-2 px-2 sm:px-3 py-2 rounded-2xl bg-white/15 backdrop-blur-xl border border-white/30 shadow-lg">
+      <nav className="max-w-5xl mx-auto flex items-center justify-center gap-1 sm:gap-2 px-2 sm:px-3 py-2 rounded-2xl bg-white/80 backdrop-blur-xl border border-slate-200 shadow-lg shadow-slate-200/50">
 
         {links.map((link) => (
           <NavLink
@@ -30,8 +30,8 @@ const Sidebar = () => {
             className={({ isActive }) =>
               `flex items-center justify-center gap-2 rounded-xl px-3 sm:px-4 py-2 text-sm sm:text-base font-semibold transition-all duration-300 whitespace-nowrap ${
                 isActive
-                  ? "bg-lime-400 text-blue-950 shadow-md"
-                  : "text-white hover:bg-white/20 hover:text-lime-300"
+                  ? "bg-amber-500 text-white shadow-md"
+                  : "text-slate-600 hover:bg-slate-100 hover:text-amber-600"
               }`
             }
           >
